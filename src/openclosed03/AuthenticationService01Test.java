@@ -8,6 +8,9 @@ class AuthenticationService01Test {
 	void test() {
 		AuthenticationService01 authenticationService01=new AuthenticationService01();
 		authenticationService01.siging(AuthenticationEngine00.facebook);
+		//Crea el objeto
+		myfun miFun=()->{	System.out.println("hola");};
+		MyFunYO myFunYO=new MyFunYO();
 	}
 
 }
