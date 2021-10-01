@@ -1,16 +1,19 @@
 package inversiondependencias07;
 
 public class ShoppingBasket implements Shopping {
-	SqlDatabase db = new SqlDatabase();
+	Persistence persistence;
 	Payment payment;
 	
-	public ShoppingBasket(Payment payment) {
+
+	public ShoppingBasket(Persistence persistence, Payment payment) {
 		super();
+		this.persistence = persistence;
 		this.payment = payment;
 	}
 
+
 	public void buy() {
-		db.save(this);
+		persistence.save(this);
 		payment.pay(this);
 
 	}
