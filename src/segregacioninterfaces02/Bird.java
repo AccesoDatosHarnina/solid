@@ -1,6 +1,11 @@
 package segregacioninterfaces02;
 
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter.DEFAULT;
+
 public interface Bird {
-	 public String eat();
-	 public String tweet();
+	public default String eat() {
+		return"todos comen igual";
+	}
+
+	public String tweet();
 }

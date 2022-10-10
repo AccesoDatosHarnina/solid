@@ -1,6 +1,9 @@
 package liskovreal00;
 
 import java.awt.Point;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 public class Circulo extends MoveableShape {
 
@@ -12,6 +15,7 @@ public class Circulo extends MoveableShape {
 	public void mover(Movement movement) {
 		super.mover(movement);
 		System.out.println("que agusto se esta despues de moverse");
+	
 	}
 	
 	//herencia rechazado
